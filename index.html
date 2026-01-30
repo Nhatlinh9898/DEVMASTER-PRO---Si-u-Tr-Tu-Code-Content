@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DEVMASTER PRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Orbitron', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'cyber-black': '#0a0a0f',
+              'cyber-dark': '#13131f',
+              'neon-blue': '#00f3ff',
+              'neon-purple': '#bc13fe',
+              'neon-green': '#0aff68',
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              glow: {
+                '0%': { boxShadow: '0 0 5px #00f3ff, 0 0 10px #00f3ff' },
+                '100%': { boxShadow: '0 0 20px #bc13fe, 0 0 30px #bc13fe' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0f;
+        background-image: 
+          radial-gradient(circle at 15% 50%, rgba(188, 19, 254, 0.1) 0%, transparent 25%), 
+          radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.1) 0%, transparent 25%);
+        color: #e2e8f0;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #13131f; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4b5563; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
